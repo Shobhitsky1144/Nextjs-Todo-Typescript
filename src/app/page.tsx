@@ -48,7 +48,7 @@ export default function Home() {
     <main >
     
       <input type='text' value={text.name} onChange={(e) => setText({...text,id:list.length,name:e.target.value})} />
-      <button onClick={handleSubmit}>{toggle ? "Edit" : "ADD"}</button>
+      <button onClick={handleSubmit}>{toggle ? "Edit" : "Add"}</button>
       {
           list?.map((item:listType)=>{
           return(
